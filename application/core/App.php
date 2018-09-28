@@ -8,7 +8,8 @@
 		public $member;
 
 		public static $app;
-		function __construct() {
+		
+		function __construct () {
 			if (isset($_GET['param'])) $param = explode("/", $_GET['param']);
 			$this->type = isset($param[0]) && strlen($param[0]) ? $param[0] : "main";
 			$this->page = isset($param[1]) && strlen($param[1]) ? $param[1] : NULL;
